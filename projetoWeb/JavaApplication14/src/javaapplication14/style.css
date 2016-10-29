@@ -1,0 +1,124 @@
+.Titulo{
+    text-align: center;
+}
+
+h3 {
+    border: 3px solid;
+    border-left: 10px solid;
+    border-color: transparent;
+    background-color: orange;   
+    color: darkslategrey;    
+}
+.divFormCadastro{
+    float: left;
+    display: table;
+    background-color: gainsboro;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+#descricaoForm{
+    display: inline;
+    float: right;
+    border: 1px solid;
+    border-color: gray;
+    width: 430px;
+    height: 550px;
+}
+
+#imgTime{
+    width: 430px;
+}
+
+label.Label{
+    text-align: right;
+    display: inline-block;
+    width: 120px;
+}
+
+.TextBox{
+    width: 300px;
+}
+
+/*----------------| TEMPLATE |----------------*/
+
+.Topo{
+    border: 1px solid;
+    border-color: gray;
+    float: top;
+    position: relative;
+    text-align: center;
+    
+}
+
+.RecipienteTopo{
+    border: 1px solid;
+    border-color: gray;
+    float: top;
+    display: inline-block;
+    height: 120px;
+    width: 69%;
+    //padding: 20px 20px 20px 20px;
+}
+
+.Esquerda{
+    //clear: left;
+    float: left;
+    width: 15%;
+    height: auto;
+    border: 1px solid;
+    border-color: gray;
+    position: relative;
+    text-align: center;
+}
+
+.RecipienteDireta{
+    border: 1px solid;
+    border-color: gray;
+    display: inline-block;
+}
+
+.Direta{
+    float: left;
+    width: 15%;
+    height: auto;
+    border: 1px solid;
+    border-color: gray;
+    position: relative;
+    text-align: center;
+    
+}
+
+.RecipienteEsquerda{
+    border: 1px solid;
+    border-color: gray;
+    display: inline-block;
+}
+
+.Rodape{
+    float: end;
+    clear: both;
+    width: 100%;
+    height: auto;
+    border: 1px solid;
+    border-color: gray;
+    position: relative;
+    text-align: center;
+}
+
+.RecipienteRodape{
+    border: 1px solid;
+    border-color: gray;
+    display: inline-block;
+}
+
+.Corpo{
+    float: left;
+    width: 66%;
+    height: auto;
+    border: 1px solid;
+    border-color: gray;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    
+}
