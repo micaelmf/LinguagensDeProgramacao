@@ -40,7 +40,7 @@ label.Label{
     width: 300px;
 }
 
-/*----------------| TEMPLATE |----------------*/
+
 
 .Topo{
     border: 1px solid;
@@ -58,11 +58,11 @@ label.Label{
     display: inline-block;
     height: 120px;
     width: 69%;
-    //padding: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .Esquerda{
-    //clear: left;
+    clear: left;
     float: left;
     width: 15%;
     height: auto;
