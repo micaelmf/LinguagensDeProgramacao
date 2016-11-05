@@ -8,13 +8,12 @@
         <title>Cadastro de novos membros - Include</title>
         <meta charset = "UTF-8">
     </head>
-    <body onload = "slide1()">        
+    <body onload = "buildImage();">        
         <div class="linha">
             <div class="coluna">
                 <img src="img/img_topo.png" alt="imagem do topo">
             </div>
         </div>
-
         <div class="header">
             <div class="linha">
                 <header>
@@ -37,34 +36,38 @@
             <div class="col12 titulo">
                 <h3 class="titulo">Cadastro para novos Membros Associados</h3>
             </div>
+        </div>
+        <div class="linha">
             <section>
                 <div class="col6 form">
                     <form id="form-cadastro">
                         <h3 class="h3-form">Dados Gerais</h3>
                         <br />
-                        <label class="Label"> Nome Completo: </label><input class="TextBox" type="text" name="txtNomeCompleto"><br />
-                        <label class="Label">N° CPF: </label><input class="TextBox" type="text" name="txtCpf"><br />
-                        <label class="Label">N° RG: </label><input class="TextBox" type="text" name="txtRg"><br />
-                        <label class="Label">Órgão Expedidor: </label><input class="TextBox" type="text" name="txtOrgaoExpedidor"><br />
+                        <label class="Label"> Nome Completo: </label><input class="TextBox" type="text" name="txtNomeCompleto" required="true">
+                        <br />
+                        <label class="Label">N° CPF: </label><input class="TextBox" type="text" name="txtCpf" required="true"><br />
+                        <label class="Label">N° RG: </label><input class="TextBox" type="text" name="txtRg" required="true"><br />
+                        <label class="Label">Órgão Expedidor: </label><input class="TextBox" type="text" name="txtOrgaoExpedidor" required="true"><br />
                         <label class="Label">Curso: </label>
-                                <select name="selectCurso" size="1">
+                                <select name="selectCurso" size="1" required="true">
+                                <option></option>
                                 <option>Ciência da Computação</option>
                                 <option>Engenharia de Software</option>
                                 </select><br />
                         <br />
                         <h3 class="h3-form">Dados de Contato</h3>               
                         <br />
-                        <label class="Label">E-mail: </label><input class="TextBox" type="text" name="txtEmail"><br />
-                        <label class="Label">Celular: </label><input class="TextBox"  type="text" name="txtCelular"><br />
+                        <label class="Label">E-mail: </label><input class="TextBox" type="text" name="txtEmail" required="true"><br />
+                        <label class="Label">Celular: </label><input class="TextBox"  type="text" name="txtCelular" required="true"><br />
                         <br />
                         <h3 class="h3-form">Dados de Endereço</h3>
                         <br />
-                        <label class="Label">Logradouro: </label><input class="TextBox" type="text" name="txtLogradouro"><br />
-                        <label class="Label">Número: </label><input class="TextBox" type="text" name="txtNumero"><br />
-                        <label class="Label">Referência: </label><input class="TextBox" type="text" name="txtReferencia"><br />
-                        <label class="Label">Bairro: </label><input class="TextBox" type="text" name="txtBairro"><br />
-                        <label class="Label">Cidade: </label><input class="TextBox" type="text" name="txtCidade"><br />
-                        <label class="Label">Estado: </label><input class="TextBox" type="text" name="txtEstado"><br />
+                        <label class="Label">Logradouro: </label><input class="TextBox" type="text" name="txtLogradouro" required="true"><br />
+                        <label class="Label">Número: </label><input class="TextBox" type="text" name="txtNumero" required="true"><br />
+                        <label class="Label">Referência: </label><input class="TextBox" type="text" name="txtReferencia" required="true"><br />
+                        <label class="Label">Bairro: </label><input class="TextBox" type="text" name="txtBairro" required="true"><br />
+                        <label class="Label">Cidade: </label><input class="TextBox" type="text" name="txtCidade" required="true"><br />
+                        <label class="Label">Estado: </label><input class="TextBox" type="text" name="txtEstado" required="true"><br />
                         <br />
                         <input type="checkbox" name="cbAceito" value="aceito"> Declaro para os devidos fins que as informações presentes neste formulário são verdadeiras.
                         <br />
@@ -77,12 +80,33 @@
             </section>
             <section>
                 <div class="col6 time">
-                    <img src="img/time.png" alt="time Include">
+                    <img class="time" src="img/time.png" alt="time Include">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil explicabo, incidunt, dignissimos eveniet aliquid, facere dolores iusto corporis debitis rerum perspiciatis sint dolore dolorem suscipit blanditiis placeat eos sunt delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus maxime cumque debitis, tempore deserunt eveniet repellendus blanditiis ut, vero obcaecati inventore ullam perferendis iure, voluptatum rem pariatur beatae voluptas.
                 </div>
-                <div>
-                    <img id="banner" src="img/banner9.png" alt="img banner">
+                <!-- <div><img id="banner" src="img/imagem9.jpg" alt="img banner"></div>-->
+                <!--
+                <button class="btn-esquerdo" onclick="proxImagem()">Próximo</button>
+                <button onclick="imagemAnt()">Anterior</button>
+                -->
+
+                <div class = "div-banner col6">
+                    <div id="banner-imagem">
+                        <div class="contents" id="content"></div>
+                    </div>
+                    
+                    <div id="banner-rodape">
+                        <img onclick="imagemAnt()" src="img/botao_esquerda.png" alt="botao_esquerda">
+                        <img onclick="proxImagem()" src="img/botao_direita.png" alt="botao_direita">
+                    </div>
+
+                    </div>
+
+                    
+                    
                 </div>
+                
+                
+
             </section>
         </div>
         <div class="footer">
