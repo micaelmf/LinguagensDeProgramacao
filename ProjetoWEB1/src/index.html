@@ -1,44 +1,64 @@
 <html>
 	<head>
-            <link rel="stylesheet" type="text/css" href="css/formCadastro.css" />
-            <link rel="stylesheet" type="text/css" href="css/template.css">
-            <link rel="stylesheet" href="style.css" type="text/css"/>
-            <link rel="stylesheet" href="style.css" type="text/css">
+        <!--<link rel="stylesheet" type="text/css" href="css/normalize.css" />-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/formCadastro.css" />
+        <script src ="javaScript/banner.js" type="text/javascript"></script>
+        
+        <title>Cadastro de novos membros - Include</title>
+        <meta charset = "UTF-8">
+    </head>
+    <body onload = "slide1()">        
+        <div class="linha">
+            <div class="coluna">
+                <img src="img/img_topo.png" alt="imagem do topo">
+            </div>
+        </div>
 
-
-            <script src ="javaScript/banner.js" type="text/javascript"></script>
-            <title>Cadastro de novos membros - Include</title>
-            <meta charset = "UTF-8">
-        </head>
-        <body onload = "slide1()">
-            <section class="Topo">
-                <div class="RecipienteTopo">
-                    topo
-                </div>
-            </section>
-            <section class="Esquerda">
-                <div class="RecipienteEsquerda">
-                    <img id="banner_esquerda"/>
-                </div>
-            </section>
-            
-            <section class="Corpo">
-                <div class="Titulo"><h2>Formulário para cadastro de novos Membros Associados - INCLUDE</h2></div>
-                <div class="divFormCadastro">
-                    <form id="formCadastro">
-                        <h3>Dados Gerais</h3>
+        <div class="header">
+            <div class="linha">
+                <header>
+                    <div class="col12">
+                        <nav>
+                        <ul class="menu inline sem-marcador">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="quemsomos.html">Quem Somos</a></li>
+                            <li><a href="faleconosco.html">Fale Conosco</a></li>
+                            <li><a href="nossosservicos.html">Nossos Serviços</a></li>
+                            <li><a href="portifolio.html">Portifolio</a></li>
+                            <li><a href="cadastro.html">Cadastre-se</a></li>
+                        </ul>
+                        </nav>
+                    </div>
+                </header>    
+            </div>
+        </div>        
+        <div class="linha">
+            <div class="col12 titulo">
+                <h3 class="titulo">Cadastro para novos Membros Associados</h3>
+            </div>
+            <section>
+                <div class="col6 form">
+                    <form id="form-cadastro">
+                        <h3 class="h3-form">Dados Gerais</h3>
+                        <br />
                         <label class="Label"> Nome Completo: </label><input class="TextBox" type="text" name="txtNomeCompleto"><br />
                         <label class="Label">N° CPF: </label><input class="TextBox" type="text" name="txtCpf"><br />
                         <label class="Label">N° RG: </label><input class="TextBox" type="text" name="txtRg"><br />
                         <label class="Label">Órgão Expedidor: </label><input class="TextBox" type="text" name="txtOrgaoExpedidor"><br />
-                        <label class="Label">Curso: </label><select name="selectCurso" size="1">
+                        <label class="Label">Curso: </label>
+                                <select name="selectCurso" size="1">
                                 <option>Ciência da Computação</option>
                                 <option>Engenharia de Software</option>
                                 </select><br />
-                        <h3>Dados de Contato</h3>				
+                        <br />
+                        <h3 class="h3-form">Dados de Contato</h3>               
+                        <br />
                         <label class="Label">E-mail: </label><input class="TextBox" type="text" name="txtEmail"><br />
                         <label class="Label">Celular: </label><input class="TextBox"  type="text" name="txtCelular"><br />
-                        <h3>Dados de Endereço</h3>
+                        <br />
+                        <h3 class="h3-form">Dados de Endereço</h3>
+                        <br />
                         <label class="Label">Logradouro: </label><input class="TextBox" type="text" name="txtLogradouro"><br />
                         <label class="Label">Número: </label><input class="TextBox" type="text" name="txtNumero"><br />
                         <label class="Label">Referência: </label><input class="TextBox" type="text" name="txtReferencia"><br />
@@ -46,36 +66,34 @@
                         <label class="Label">Cidade: </label><input class="TextBox" type="text" name="txtCidade"><br />
                         <label class="Label">Estado: </label><input class="TextBox" type="text" name="txtEstado"><br />
                         <br />
-                        <input type="checkbox" name="cbAceito" value="aceito"> Declaro para os devidos fins que as informações presentes <br/>
-                        presentes neste formulário são verdadeiras.
+                        <input type="checkbox" name="cbAceito" value="aceito"> Declaro para os devidos fins que as informações presentes neste formulário são verdadeiras.
                         <br />
-                        <input type="submit" name="btnCadastrar" value="Cadastrar">      
+                        <div class="form-botoes">
+                            <input class="botao" type="submit" name="btnCadastrar" value="Cadastrar">    
+                        </div>
+                        
                     </form>
                 </div>
-                <div id="descricaoForm" style="text-align: justify">
-                    <img id="imgTime" src="img\time.png">
-                    Seja um membro associado da Include EJ e participe diretamente
-                    das principais decisões da empresa. São vários os benefícios
-                    aos nosso membros, dentre eles o de adquirir experiência experência
-                    no mercado de trabalho no decorrer da carreira acadêmica. Não deixe
-                    oportunidades assim passarem, seja um membro associado!
-                   
+            </section>
+            <section>
+                <div class="col6 time">
+                    <img src="img/time.png" alt="time Include">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil explicabo, incidunt, dignissimos eveniet aliquid, facere dolores iusto corporis debitis rerum perspiciatis sint dolore dolorem suscipit blanditiis placeat eos sunt delectus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus maxime cumque debitis, tempore deserunt eveniet repellendus blanditiis ut, vero obcaecati inventore ullam perferendis iure, voluptatum rem pariatur beatae voluptas.
+                </div>
+                <div>
+                    <img id="banner" src="img/banner9.png" alt="img banner">
                 </div>
             </section>
-            <section class="Direta">
-                <div class="RecipienteDireta">
-                    direta
-                </div>
-            </section>
-            <section class="Rodape">
-                <div class="RecipienteRodape">
-                    rodape
-                </div>
-            </section>
-
-	</body>
-	
-	
-	
+        </div>
+        <div class="footer">
+            <div class="linha">
+                <footer>
+                    <div class="col12 rodape">
+                        <span>Include EJ &copy - Todos os direitos reservados</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        </body>
 <!-- Comentário -->
 </html>

@@ -1,124 +1,219 @@
-.Titulo{
-    text-align: center;
+body{
+    margin: 0 0 0 0;
+    background-color: #F4F4F4;
+    font-family: 'Lato', sans-serif;
 }
 
-h3 {
-    border: 3px solid;
-    border-left: 10px solid;
-    border-color: transparent;
-    background-color: orange;   
-    color: darkslategrey;    
-}
-.divFormCadastro{
-    float: left;
-    display: table;
-    background-color: gainsboro;
-    padding: 10px 10px 10px 10px;
-    
+a:link, a:active, a:visited{
+    color: #315;
+    text-decoration: none;
 }
 
-#descricaoForm{
-    display: inline;
-    float: right;
-    border: 1px solid;
-    border-color: gray;
-    width: 430px;
-    height: 550px;
-}
-
-#imgTime{
-    width: 430px;
+a:hover{
+    text-decoration: underline; 
 }
 
 label.Label{
     text-align: right;
     display: inline-block;
-    width: 120px;
+    width: 140px;
 }
 
 .TextBox{
     width: 300px;
 }
 
+#form-cadastro{
 
+}
 
-.Topo{
-    border: 1px solid;
-    border-color: gray;
-    float: top;
-    position: relative;
+/* ESTILOS REUTILIZAVEIS */
+
+.sem-padding{
+    padding: 0 !important;
+}
+
+.sem-margin{
+    margin: : 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 10px 10px;
+    font-weight: 700;
+}
+
+h3.titulo {
+    background-color: transparent;
     text-align: center;
+    font-weight: 700;
+}
+
+h3.h3-form{
+    margin: 0 0 0 0;
+    border-radius: 4px;
+    border: 3px solid;
+    border-left: 10px solid;
+    border-color: transparent;
+    font-weight: 700;
+    background-color: orange;   
+    color: #202020;
+}
+
+div.form-botoes{
+    margin: 30px 0 0 0;
+    text-align: center;
+}
+
+ul li, ol li{
+    margin-bottom: 5px;
+}
+
+ul.inline li, ol.inline li{
+    display: inline;
+    margin-right: 15px;   
+}
+
+ul.inline li:last-child, ol.inline li:last-child{
+    margin-right: 15px;
     
 }
 
-.RecipienteTopo{
-    border: 1px solid;
-    border-color: gray;
-    float: top;
+ul.sem-marcador, ol.sem-marcador{
+    list-style: none;
+}
+
+a.botao, input.botao{
+    padding: 5px 10px;
+    border-radius: 3px;
+    background-color: #202020;
+    color: #f5f5f5;
+    cursor: pointer;
+    margin: 5px 0;
     display: inline-block;
-    height: 120px;
-    width: 69%;
-    padding: 20px 20px 20px 20px;
+    border: none; 
 }
 
-.Esquerda{
-    clear: left;
-    float: left;
-    width: 15%;
+a.botao:hover, input.botao:hover{
+    background-color: #4e4e4e;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
     height: auto;
-    border: 1px solid;
-    border-color: gray;
-    position: relative;
-    text-align: center;
+    border-radius: 4px;
 }
 
-.RecipienteDireta{
-    border: 1px solid;
-    border-color: gray;
-    display: inline-block;
+/*LAYOUT DO SITE*/
+.header{
+    background-image: url(../img/menu.png);
+    background-repeat: repeat-x;
 }
 
-.Direta{
-    float: left;
-    width: 15%;
-    height: auto;
-    border: 1px solid;
-    border-color: gray;
-    position: relative;
+.footer{
+    background-image: url(../img/menu.png);
+    background-repeat: repeat-x;
+}
+
+div.rodape{
     text-align: center;
+    color: gray;
+    font-weight: 300;
+}
+
+
+.menu{
+    text-transform: uppercase;
+}
+
+.menu li a{
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: white;
     
 }
 
-.RecipienteEsquerda{
-    border: 1px solid;
-    border-color: gray;
-    display: inline-block;
+.menu li a:hover{
+    text-decoration: none;
+    background: #ff8c00;
+    color: black;
+
 }
 
-.Rodape{
-    float: end;
-    clear: both;
-    width: 100%;
-    height: auto;
-    border: 1px solid;
-    border-color: gray;
-    position: relative;
-    text-align: center;
-}
-
-.RecipienteRodape{
-    border: 1px solid;
-    border-color: gray;
-    display: inline-block;
-}
-
-.Corpo{
+.time{
+    margin: 5px 5px;
     float: left;
-    width: 66%;
-    height: auto;
-    border: 1px solid;
-    border-color: gray;
-    position: relative;
-    padding: 20px 20px 20px 20px;
-    
+}
+
+.form{
+    margin: 5px 5px;
+    float: left;
+}
+
+#img-menu{
+    background-image: url("img/menu.png");
+    background-repeat: repeat-x;
+}
+
+/* GRID 960 */
+
+.linha{
+    width: 960px;
+    margin: 0px auto;
+    overflow: auto;
+    padding: 5px 0px;
+}
+
+.coluna{
+    padding: 0px 10px;
+    float: left;
+}
+
+.col1{
+    width: 60px;
+    background-color: 
+}
+
+.col2{
+    width: 140px;
+}
+
+.col3{
+    width: 220px;
+}
+
+.col4{
+    width: 300px;
+}
+
+.col5{
+    width: 380px;
+}
+
+.col6{
+    width: 460px;
+}
+
+.col7{
+    width: 540px;
+}
+
+.col8{
+    width: 620px;
+}
+
+.col9{
+    width: 700px;
+}
+
+.col10{
+    width: 780px;
+}
+
+.col11{
+    width: 860px;
+}
+
+.col12{
+    width: 940px;
 }
