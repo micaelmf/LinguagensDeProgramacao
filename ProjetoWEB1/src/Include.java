@@ -14,13 +14,14 @@ public class Include {
         }else{
             System.out.println("Conexão: PRESTOU NÃO!!!");
         }
-        /*
+        
         //cria um praparedStatement
         String sql = "insert int membros" +
                 " (id, nome_completo, cpf, rg, orgao_exp, curso, email, celular, "
-                + "logradouro, numero, referencia, bairro, cidade, estado, aceito)" +
-                " values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                + "logradouro, numero, referencia, bairro, cidade, estado, aceito)"
+                + " values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         PreparedStatement stmt = con.prepareStatement(sql);
+        
         //preenche os valores
         stmt.setString(1, "texto");
         stmt.setString(2, "texto");
@@ -40,9 +41,10 @@ public class Include {
         
         stmt.execute();
         stmt.close();
+        
         System.out.println("Gravado!!!");
         con.close();
-        */
+        
     }
     
 }
